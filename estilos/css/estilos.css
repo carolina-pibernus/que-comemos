@@ -1,0 +1,466 @@
+html {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  background-color: #111111; }
+
+.boton, .botonPrincipal, .botonReserva, body main #seccionDos #divReserva #formularioReserva #enviarReserva {
+  background-color: inherit;
+  border-radius: 10px;
+  border: #ff75ff 2px solid;
+  box-shadow: cyan 0px 0px 5px, cyan inset 0px 0px 5px;
+  padding: 10px;
+  margin: 2%;
+  font-size: 1.1rem;
+  color: #ff75ff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  text-shadow: cyan 0px 0px 5px; }
+
+.botonPrincipal {
+  padding: 20px; }
+
+body {
+  margin: 0% 10% 0% 10%;
+  border-left: #ffff3a 2px solid;
+  border-right: #ffff3a 2px solid;
+  border-bottom: none;
+  border-top: none;
+  box-shadow: #ffff3a 0px 0px 25px, #ffff3a inset 0px 0px 5px, cyan 0px 0px 2px, cyan inset 0px 0px 2px;
+  text-align: center;
+  background-color: #111111;
+  color: #3e3f3f;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  body header {
+    padding: 3% 2% 3% 2%;
+    width: 90%;
+    font-size: 1.1rem;
+    color: #3e3f3f;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal; }
+    body header div p {
+      font-size: 1.1rem;
+      color: #c1dada;
+      font-family: "Quicksand", sans-serif;
+      font-weight: normal; }
+    body header img {
+      width: 15%;
+      height: 15%;
+      padding: 1%;
+      border-radius: 100%;
+      border: cyan 2px solid;
+      box-shadow: cyan 0px 0px 15px, cyan inset 0px 0px 5px; }
+    body header h1 {
+      font-size: 1.8rem;
+      color: #ff6be9;
+      font-family: "Kodchasan", sans-serif;
+      font-weight: bold;
+      text-shadow: #ff6be9 0px 0px 5px;
+      letter-spacing: 3px;
+      padding: 0.5%;
+      margin-bottom: 1%;
+      margin-top: 1%; }
+    body header h2 {
+      font-size: 1.1rem;
+      color: cyan;
+      font-family: "Quicksand", sans-serif;
+      font-weight: bolder;
+      text-shadow: cyan 0px 0px 5px;
+      margin-top: 1%;
+      margin-bottom: 2%; }
+    body header #divUsuario {
+      width: 100%;
+      text-align: right; }
+      body header #divUsuario #salir {
+        background-color: inherit;
+        border: none;
+        font-size: 1.1rem;
+        color: #ff75ff;
+        font-family: "Quicksand", sans-serif;
+        font-weight: normal;
+        text-shadow: cyan 0px 0px 5px; }
+  body main {
+    font-size: 1rem;
+    color: #c1dada;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    width: 90%; }
+    body main #seccionLogIn #logIn {
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-around;
+      text-align: center;
+      padding: 1%; }
+      body main #seccionLogIn #logIn input {
+        font-size: 1rem;
+        margin: 2%;
+        align-self: center; }
+      body main #seccionLogIn #logIn #crearCuenta {
+        color: #ffff80; }
+    body main #seccionLogIn #registro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%; }
+      body main #seccionLogIn #registro h4 {
+        font-size: 1.1rem;
+        color: #ff75ff;
+        font-family: "Quicksand", sans-serif;
+        font-weight: bolder;
+        text-shadow: cyan 0px 0px 5px; }
+      body main #seccionLogIn #registro div {
+        padding: 1%;
+        margin: 1%; }
+        body main #seccionLogIn #registro div input {
+          margin: 2%;
+          background-color: inherit;
+          font-size: 1rem; }
+        body main #seccionLogIn #registro div label {
+          margin: 1%;
+          margin-top: 2%; }
+        body main #seccionLogIn #registro div p {
+          color: grey;
+          font-size: 0.9rem;
+          margin-top: 0%; }
+      body main #seccionLogIn #registro #registroInvalido {
+        font-size: 1.1rem;
+        color: cyan;
+        font-family: "Quicksand", sans-serif;
+        font-weight: normal;
+        text-shadow: #ff75ff 0px 0px 5px; }
+    body main #seccionUno {
+      padding: 1%;
+      margin: 1%; }
+    body main #seccionDos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      body main #seccionDos h4 {
+        font-size: 1.1rem;
+        color: #ff75ff;
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        text-shadow: cyan 0px 0px 5px; }
+      body main #seccionDos form, body main #seccionDos #divReserva, body main #seccionDos #divReserva #formularioReserva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%; }
+        body main #seccionDos form div, body main #seccionDos #divReserva div, body main #seccionDos #divReserva #formularioReserva div {
+          padding: 2%;
+          margin: 1%; }
+          body main #seccionDos form div select option, body main #seccionDos #divReserva div select option, body main #seccionDos #divReserva #formularioReserva div select option {
+            background-color: #3e3f3f; }
+          body main #seccionDos form div input, body main #seccionDos #divReserva div input, body main #seccionDos #divReserva #formularioReserva div input {
+            background-color: inherit; }
+      body main #seccionDos #mensajeNoIngreso {
+        font-size: 1.1rem;
+        color: cyan;
+        font-family: "Quicksand", sans-serif;
+        font-weight: normal;
+        text-shadow: #ff75ff 0px 0px 5px; }
+      body main #seccionDos #recomendaciones {
+        display: flex;
+        flex-direction: row;
+        align-items: space-around;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+        body main #seccionDos #recomendaciones #tituloRecomendaciones {
+          width: 100%;
+          font-size: 1rem; }
+        body main #seccionDos #recomendaciones h5 {
+          margin-top: 2%;
+          margin-bottom: 3%;
+          padding-bottom: 2%; }
+        body main #seccionDos #recomendaciones div {
+          width: 50%;
+          padding-bottom: 3%; }
+          body main #seccionDos #recomendaciones div h5 {
+            font-size: 1.1rem;
+            color: cyan;
+            font-family: "Quicksand", sans-serif;
+            font-weight: bold;
+            text-shadow: #ffff3a 0px 0px 5px; }
+      body main #seccionDos #divReserva {
+        width: 80%; }
+        body main #seccionDos #divReserva h5 {
+          font-size: 1.1rem;
+          margin: 2%; }
+        body main #seccionDos #divReserva h6 {
+          font-size: 1.4rem;
+          color: cyan;
+          font-family: "Quicksand", sans-serif;
+          font-weight: bold;
+          text-shadow: #ffff3a 0px 0px 5px;
+          margin: 2%; }
+        body main #seccionDos #divReserva #formularioReserva {
+          width: 100%; }
+          body main #seccionDos #divReserva #formularioReserva input {
+            padding: 2%;
+            margin: 1%;
+            background-color: inherit; }
+          body main #seccionDos #divReserva #formularioReserva label {
+            padding: 5% 2% 2% 2%;
+            margin: 1%; }
+          body main #seccionDos #divReserva #formularioReserva select {
+            margin: 1% 1% 2% 1%; }
+            body main #seccionDos #divReserva #formularioReserva select option {
+              background-color: #3e3f3f; }
+          body main #seccionDos #divReserva #formularioReserva p {
+            font-size: 0.9rem;
+            color: grey; }
+          body main #seccionDos #divReserva #formularioReserva #enviarReserva {
+            margin-top: 8%; }
+          body main #seccionDos #divReserva #formularioReserva #reservaBloqueada {
+            font-size: 1.1rem;
+            color: cyan;
+            font-family: "Quicksand", sans-serif;
+            font-weight: normal;
+            text-shadow: #ff75ff 0px 0px 5px; }
+        body main #seccionDos #divReserva ul {
+          list-style: none;
+          padding: 0%; }
+          body main #seccionDos #divReserva ul li {
+            padding: 2%; }
+    body main #divReservasUsuario {
+      font-size: 1.1rem;
+      color: #c1dada;
+      font-family: "Open Sans", sans-serif;
+      font-weight: normal;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: space-around;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      body main #divReservasUsuario div {
+        width: 50%; }
+        body main #divReservasUsuario div h5 {
+          font-size: 1.1rem;
+          color: cyan;
+          font-family: "Quicksand", sans-serif;
+          font-weight: bold;
+          text-shadow: #ffff3a 0px 0px 5px; }
+        body main #divReservasUsuario div ul {
+          list-style: none;
+          padding: 1%; }
+          body main #divReservasUsuario div ul li {
+            width: 100%; }
+  body footer {
+    font-size: 1rem;
+    color: #c1dada;
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2%;
+    width: 100%; }
+    body footer img {
+      width: 98%;
+      align-self: center; }
+    body footer div {
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-around;
+      margin-top: 1%;
+      width: 50%; }
+      body footer div h6 {
+        font-size: 1rem;
+        color: grey;
+        font-family: "Quicksand", sans-serif;
+        font-weight: normal;
+        padding: 1%;
+        margin: 1%; }
+      body footer div a {
+        color: #96c7bb;
+        text-shadow: cyan 0px 0px 2px;
+        text-decoration: none;
+        padding: 1%;
+        margin: 1%; }
+      body footer div p {
+        font-size: 1rem;
+        color: grey;
+        font-family: "Quicksand", sans-serif;
+        font-weight: normal;
+        padding: 1%;
+        margin: 1%; }
+
+.espacioInput, body main #seccionDos #divReserva #formularioReserva input {
+  background-color: inherit;
+  border-bottom: #ffff3a 0.5px solid;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #ffff80; }
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0% 2% 0% 2%;
+    font-size: 0.9rem; }
+    body header img {
+      width: 20%;
+      height: 20%; }
+    body main {
+      font-size: 1rem; }
+      body main section {
+        font-size: 1rem; }
+      body main #seccionDos form input, body main #seccionDos #divReserva input, body main #seccionDos #divReserva #formularioReserva input {
+        margin: 2%; }
+      body main #seccionDos form label, body main #seccionDos #divReserva label, body main #seccionDos #divReserva #formularioReserva label {
+        margin: 2%; }
+      body main #seccionDos #recomendaciones {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: space-around;
+        flex-wrap: nowrap; }
+        body main #seccionDos #recomendaciones div {
+          width: 100%;
+          padding-bottom: 4%; }
+      body main #seccionReservas #divReservasUsuario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: space-around;
+        flex-wrap: nowrap; }
+        body main #seccionReservas #divReservasUsuario div {
+          width: 100%; }
+          body main #seccionReservas #divReservasUsuario div h5 {
+            font-size: 1.1rem;
+            color: cyan;
+            font-family: "Quicksand", sans-serif;
+            font-weight: bold;
+            text-shadow: #ffff3a 0px 0px 5px; }
+          body main #seccionReservas #divReservasUsuario div ul {
+            list-style: none;
+            padding: 1%;
+            font-size: 1rem; }
+            body main #seccionReservas #divReservasUsuario div ul li {
+              width: 100%; }
+  footer {
+    align-content: center; }
+    footer img {
+      padding: 1%;
+      width: 100%; } }
+
+@media only screen and (max-width: 550px) {
+  body header div p {
+    font-size: 0.9rem; }
+  body header div input #salir {
+    font-size: 0.9rem; }
+  body header img {
+    width: 25%;
+    height: 25%;
+    border: cyan 1px solid;
+    box-shadow: cyan 0px 0px 10px, cyan inset 0px 0px 4px; }
+  body header h1 {
+    font-size: 1.1rem; }
+  body header h2 {
+    font-size: 0.9rem; }
+  body main {
+    font-size: 0.9rem; }
+    body main section {
+      font-size: 0.9rem; }
+    body main #seccionLogIn {
+      margin: 2%; }
+      body main #seccionLogIn input {
+        margin: 1%; }
+      body main #seccionLogIn label {
+        margin: 1%;
+        margin-top: 2%; }
+      body main #seccionLogIn #crearCuenta {
+        color: #ffff80; }
+      body main #seccionLogIn #registro h4 {
+        font-size: 1rem;
+        font-weight: normal; }
+      body main #seccionLogIn #registro div {
+        width: 100%;
+        font-size: 0.9rem; }
+        body main #seccionLogIn #registro div input {
+          font-size: 0.9rem; }
+    body main #seccionDos #tituloCuatro {
+      font-size: 1rem;
+      font-weight: normal; }
+    body main #seccionDos #recomendaciones {
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-around;
+      flex-wrap: nowrap; }
+      body main #seccionDos #recomendaciones div {
+        width: 100%;
+        padding-bottom: 3%; }
+    body main #seccionDos #divReserva h6 {
+      font-size: 1.1rem; }
+    body main #seccionDos #divReserva #formularioReserva select {
+      margin-bottom: 5%; }
+    body main #seccionDos form input, body main #seccionDos #divReserva input, body main #seccionDos #divReserva #formularioReserva input {
+      margin: 2%; }
+    body main #seccionDos form label, body main #seccionDos #divReserva label, body main #seccionDos #divReserva #formularioReserva label {
+      margin: 2%; }
+    body main #seccionReservas #divReservasUsuario {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      justify-content: space-around;
+      flex-wrap: nowrap; }
+      body main #seccionReservas #divReservasUsuario div {
+        width: 100%;
+        font-size: 0.9rem; }
+        body main #seccionReservas #divReservasUsuario div h5 {
+          font-size: 1.1rem;
+          color: cyan;
+          font-family: "Quicksand", sans-serif;
+          font-weight: bold;
+          text-shadow: #ffff3a 0px 0px 2px; }
+        body main #seccionReservas #divReservasUsuario div ul {
+          list-style: none;
+          padding: 1%;
+          font-size: 0.9rem; }
+          body main #seccionReservas #divReservasUsuario div ul li {
+            width: 100%;
+            padding-bottom: 1%; }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%; }
+    body footer img {
+      padding: 1%;
+      width: 95%; }
+    body footer div {
+      width: 100%; }
+      body footer div p {
+        font-size: 0.9rem; }
+      body footer div h6 {
+        font-size: 0.9rem; }
+      body footer div a {
+        font-size: 0.9rem; }
+  .boton, .botonPrincipal, .botonReserva, body main #seccionDos #divReserva #formularioReserva #enviarReserva {
+    background-color: inherit;
+    border-radius: 10px;
+    border: #ff75ff 1px solid;
+    box-shadow: cyan 0px 0px 3px, cyan inset 0px 0px 3px;
+    padding: 10px;
+    margin: 2%;
+    font-size: 1rem;
+    color: #ff75ff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    text-shadow: cyan 0px 0px 3px; } }

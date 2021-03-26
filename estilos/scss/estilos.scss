@@ -1,0 +1,589 @@
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+}
+
+$color-fondo:#111111; 
+$color-logo: rgb(255, 107, 233); 
+$rosa: #ff75ff; 
+$amarillo: rgb(255, 255, 58);
+$amarillo-claro: rgb(255, 255, 128);
+$turquesa: cyan;
+$blanco: #c1dada;
+$gris-oscuro: #3e3f3f;
+$gris-claro: #96c7bb; 
+
+$letraChica: 0.9rem;
+$letraBase: 1rem;
+$letraMediana: 1.1rem;
+$letraGrande:1.4rem;
+$letraXG: 1.8rem;
+
+$tipografiaBase: 'Open Sans', sans-serif;
+$tipografiaLogo: 'Kodchasan', sans-serif;
+$tipografiaTitulos: 'Quicksand', sans-serif;
+
+
+@mixin propiedadesTexto ($medida, $color, $tipografia, $pesoFuente) {
+    font-size: $medida;
+    color: $color;
+    font-family: $tipografia;
+    font-weight: $pesoFuente;
+}
+@mixin flexDisplay ($flex, $direccion, $alineacion, $justificacion) {
+    display: $flex;
+    flex-direction: $direccion;
+    align-items: $alineacion;
+    justify-content: $justificacion;
+}
+
+.boton {
+    background-color: inherit;
+    border-radius: 10px;
+    border: $rosa 2px solid;
+    box-shadow: $turquesa 0px 0px 5px, $turquesa inset 0px 0px 5px;
+    padding: 10px;
+    margin: 2%;
+    @include propiedadesTexto($letraMediana, $rosa, $tipografiaTitulos, normal);
+    text-shadow: $turquesa 0px 0px 5px;
+}
+.botonPrincipal {
+    @extend .boton;
+    padding: 20px;
+}
+.botonReserva {
+    @extend .boton;
+}
+
+
+body {
+    margin: 0% 10% 0% 10%;
+    border-left: $amarillo 2px solid;
+    border-right: $amarillo 2px solid;
+    border-bottom: none;
+    border-top: none;
+    box-shadow: $amarillo 0px 0px 25px , $amarillo inset 0px 0px 5px, $turquesa 0px 0px 2px, $turquesa inset 0px 0px 2px;
+    text-align: center;
+    background-color: $color-fondo;
+    color: $gris-oscuro;
+    font-family: $tipografiaBase;
+    @include flexDisplay(flex, column, center, space-around);
+
+    header {
+        padding: 3% 2% 3% 2%;
+        width: 90%;
+
+        @include propiedadesTexto($letraMediana, $gris-oscuro, $tipografiaBase, normal);
+        div {
+            p{
+                @include propiedadesTexto($letraMediana, $blanco, $tipografiaTitulos, normal);
+
+            }
+        }
+        img {
+            width: 15%;
+            height: 15%;
+            padding: 1%;
+            border-radius: 100%;
+            border: $turquesa 2px solid;
+            box-shadow: $turquesa 0px 0px 15px, $turquesa inset 0px 0px 5px;
+        }
+        h1 {
+            @include propiedadesTexto($letraXG, $color-logo, $tipografiaLogo, bold);
+            text-shadow: $color-logo 0px 0px 5px;
+            letter-spacing: 3px;
+            padding: 0.5%;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+        h2 {
+            @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, bolder);
+            text-shadow: $turquesa 0px 0px 5px;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+        #divUsuario {
+            width: 100%;
+            text-align: right;
+            #salir {
+                background-color: inherit;
+                border: none;
+                
+                @include propiedadesTexto($letraMediana, $rosa, $tipografiaTitulos, normal);
+                text-shadow: $turquesa 0px 0px 5px;
+
+            }
+        }
+    }
+    main {
+        @include propiedadesTexto($letraBase, $blanco, $tipografiaBase, normal);
+        width: 90%;
+        #seccionLogIn {
+          #logIn {
+            @include flexDisplay(flex, column, space-around, space-around);
+            text-align: center;
+            padding: 1%;
+            input {
+                font-size: $letraBase;
+                margin: 2%;
+                align-self: center;
+                
+                            }
+            #crearCuenta {
+                color: $amarillo-claro;
+            }                
+
+          }
+          #registro {
+            @include flexDisplay(flex, column, center, space-around);
+            width: 100%;
+            h4 {
+                @include propiedadesTexto($letraMediana, $rosa, $tipografiaTitulos, bolder);
+                text-shadow: $turquesa 0px 0px 5px;
+            }
+            div {
+                padding: 1%;
+                margin: 1%;
+                
+                input  {
+                    margin: 2%;
+                    background-color: inherit;
+                    font-size: $letraBase;
+                }
+                label {
+                    margin: 1%;
+                    margin-top: 2%;
+                }
+                p {
+                    color: grey;
+                    font-size: $letraChica;
+                    margin-top: 0%;
+                }
+            }
+            #registroInvalido {
+                @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, normal);
+                text-shadow: $rosa 0px 0px 5px;
+
+            }
+
+          } 
+        }
+        #seccionUno {
+            padding: 1%;
+            margin: 1%;
+
+        }
+        #seccionDos {
+            @include flexDisplay(flex, column, center, space-around);
+            h4 {
+                @include propiedadesTexto($letraMediana, $rosa, $tipografiaTitulos, bold);
+                text-shadow: $turquesa 0px 0px 5px;
+
+            }
+            form {
+                @include flexDisplay(flex, column, center, space-around);
+                width: 100%;
+                div {
+                    padding: 2%;
+                    margin: 1%;
+                    select {
+                        option {
+                            background-color: $gris-oscuro;
+                        }
+                    }
+                    input  {
+                        background-color: inherit;
+                    }
+                }
+            }
+            #mensajeNoIngreso {
+                @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, normal);
+                text-shadow: $rosa 0px 0px 5px;
+
+            }
+            #recomendaciones {
+                @include flexDisplay(flex, row, space-around, space-around);
+                flex-wrap: wrap;
+                #tituloRecomendaciones {
+                    width: 100%; 
+                    font-size: $letraBase;
+                }
+                h5 {
+                    margin-top: 2%;
+                    margin-bottom: 3%;
+                    padding-bottom: 2%;
+                }
+                div {
+                    width: 50%;
+                    padding-bottom: 3%;
+
+                    h5 {
+                        @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, bold);
+                        text-shadow: $amarillo 0px 0px 5px;
+                    }
+                }
+            } 
+            #divReserva {
+                @extend form ;
+                width: 80%;
+                h5 {
+                    font-size: $letraMediana;
+                    margin: 2%;
+                }
+                h6 {
+                    @include propiedadesTexto($letraGrande, $turquesa, $tipografiaTitulos, bold);
+                    text-shadow: $amarillo 0px 0px 5px;
+                    margin: 2%;
+                }
+                #formularioReserva {
+                    
+                    width: 100%; 
+                    @extend form ;
+                    input {
+                        @extend .espacioInput ;
+                        padding: 2%;
+                        margin: 1%;
+                        background-color: inherit;
+                    }
+                    label {
+                        padding: 5% 2% 2% 2%;
+                        margin: 1%;
+                    }
+                    select {
+                        margin: 1% 1% 2% 1%;
+                        option {
+                            background-color: $gris-oscuro;
+                        }
+                    }
+                    p {
+                        font-size: $letraChica;
+                        color: grey;
+                    }
+                    #enviarReserva {
+                        @extend .boton;
+                        margin-top: 8%;
+                    }
+                    #reservaBloqueada {
+                        @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, normal);
+                        text-shadow: $rosa 0px 0px 5px;
+                    }
+                    
+                }
+                ul {
+                    list-style: none;
+                    padding: 0%;
+                    li {
+                        padding: 2%;
+                    }
+                }
+                
+            }
+
+        }
+        #divReservasUsuario {
+            @include propiedadesTexto($letraMediana, $blanco, $tipografiaBase, normal);
+            width: 100%;
+            @include flexDisplay(flex, row, space-around, space-around);
+            flex-wrap: wrap;
+                div {
+                    width: 50%;
+                    h5 {
+                        @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, bold);
+                        text-shadow: $amarillo 0px 0px 5px;
+
+                    }
+                    ul{
+                      list-style: none;
+                      padding: 1%;
+                      li {
+                          width: 100%;
+                      }
+                    }
+                }
+               
+        }
+
+    } 
+    footer {
+        @include propiedadesTexto($letraBase, $blanco, $tipografiaTitulos, normal);
+        @include flexDisplay(flex, row , space-around , space-around );
+        flex-wrap: wrap;
+        padding: 2%;
+        width: 100%;
+        img {
+            width: 98%;
+            align-self: center;
+        }
+        div{
+            @include flexDisplay(flex, column, space-around ,space-around );
+            margin-top: 1%;
+            width: 50%;
+
+            h6 {
+                @include propiedadesTexto($letraBase, grey, $tipografiaTitulos ,normal );
+                padding: 1%;
+                margin: 1%;
+            }
+            a {
+                color: $gris-claro;
+                text-shadow: $turquesa 0px 0px 2px;
+                text-decoration: none;
+                padding: 1%;
+                margin:1%;
+            }
+            p {
+                @include propiedadesTexto($letraBase, grey, $tipografiaTitulos ,normal );
+                padding: 1%;
+                margin: 1%;
+
+
+            }
+
+        }
+        
+    }
+}
+
+.espacioInput {
+    background-color: inherit;
+    border-bottom: $amarillo 0.5px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: $amarillo-claro;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin: 0% 2% 0% 2%;
+        font-size: $letraChica;
+        header {
+            img {
+                width: 20%;
+                height: 20%;
+            }
+        
+        }
+        main {
+            font-size: $letraBase;
+            section {
+                font-size:$letraBase;
+                
+            }
+            #seccionDos {
+                form {
+                    input {
+                        margin: 2%;
+                    }
+                    label {
+                        margin:2%;
+                    }
+                }
+                #recomendaciones {
+                    @include flexDisplay(flex, column, space-around, space-around);
+                    flex-wrap: nowrap;
+                    div {
+                        width: 100%;
+                        padding-bottom: 4%;
+                    }
+                }               
+            }
+            #seccionReservas {
+                #divReservasUsuario {
+                    width: 100%;
+                    @include flexDisplay(flex, column, space-around, space-around);
+                    flex-wrap: nowrap;
+                    div {
+                        width: 100%;
+                           
+                        h5 {
+                            @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, bold);
+                            text-shadow: $amarillo 0px 0px 5px;
+    
+                        }
+                        
+                        ul{
+                          list-style: none;
+                          padding: 1%;
+                          font-size: $letraBase;
+                          li {
+                              width: 100%;
+                          }
+                        }
+                    }
+                }    
+            }
+            
+        }
+    }
+    footer {
+        align-content: center;
+        img {
+            padding: 1%;
+            width: 100%;
+        }    
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        header {
+            div {
+                p {
+                    font-size: $letraChica;
+                }
+                input #salir {
+                    font-size: $letraChica;
+
+                }
+            }
+            img {
+                width: 25%;
+                height: 25%;
+                border: $turquesa 1px solid;
+                box-shadow: $turquesa 0px 0px 10px, $turquesa inset 0px 0px 4px;
+            }
+            h1 {
+                font-size: $letraMediana;
+            }
+            h2 {
+                font-size: $letraChica;
+            }
+        }
+        main {
+            font-size: $letraChica;
+            
+            section {
+                font-size:$letraChica;
+                
+            }
+            #seccionLogIn {
+                margin: 2%;
+                input {
+                    margin: 1%;
+                }
+                label {
+                    margin: 1%;
+                    margin-top: 2%;
+                }
+                #crearCuenta {
+                    color: $amarillo-claro;
+                }
+                #registro {
+                    h4 {
+                        font-size: $letraBase;
+                        font-weight: normal;
+                    }
+                    div {
+                        width: 100%;
+                        font-size: $letraChica;
+                        input {
+                            font-size: $letraChica;
+                        }
+                    }
+                }
+            }
+            #seccionDos {
+                #tituloCuatro {
+                    font-size: $letraBase;
+                    font-weight: normal;
+                }
+                #recomendaciones {
+                    @include flexDisplay(flex, column, space-around, space-around);
+                    flex-wrap: nowrap;
+                    div {
+                        width: 100%;
+                        padding-bottom: 3%;
+                    }
+                }   
+                #divReserva {
+                    h6 {
+                        font-size: $letraMediana;
+                    }
+                    #formularioReserva {
+                        select {
+                          margin-bottom: 5%;
+                        }
+                    
+                    }
+                
+                }  
+                form {
+                    input {
+                        margin: 2%;
+                    }
+                    label {
+                        margin:2%;
+                    }
+                }          
+            }
+            
+            #seccionReservas {
+                #divReservasUsuario {
+                    width: 100%;
+                    @include flexDisplay(flex, column, space-around, space-around);
+                    flex-wrap: nowrap;
+                    div {
+                        width: 100%;
+                        font-size: $letraChica;
+   
+                        h5 {
+                            @include propiedadesTexto($letraMediana, $turquesa, $tipografiaTitulos, bold);
+                            text-shadow: $amarillo 0px 0px 2px;
+    
+                        }
+                        
+                        ul{
+                          list-style: none;
+                          padding: 1%;
+                          font-size: $letraChica;
+                          li {
+                              width: 100%;
+                              padding-bottom: 1%;
+                          }
+                        }
+                    }
+                }    
+            }
+            
+        }
+        footer {
+            @include flexDisplay(flex, column , center, space-around);
+            flex-wrap: nowrap;
+            width: 100%;
+            img {
+                padding: 1%;
+                width: 95%;
+            }    
+            div {
+                width: 100%;
+                p {
+                    font-size: $letraChica;
+                }
+                h6 {
+                    font-size: $letraChica;
+                }
+                a {
+                    font-size: $letraChica;
+                }
+
+            }
+        }
+    }
+    
+    .boton {
+        background-color: inherit;
+        border-radius: 10px;
+        border: $rosa 1px solid;
+        box-shadow: $turquesa 0px 0px 3px, $turquesa inset 0px 0px 3px;
+        padding: 10px;
+        margin: 2%;
+        @include propiedadesTexto($letraBase, $rosa, $tipografiaTitulos, normal);
+        text-shadow: $turquesa 0px 0px 3px;
+    }
+
+}
+

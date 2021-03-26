@@ -1,0 +1,50 @@
+{"usuariosRegistrados": [
+    
+    {   
+        "nombre": "juan"  ,
+        "apellido": "perez",
+        "fecha": "20/12/1990",
+        "telefono": "155555555",
+        "email": "juanperez@mail.com",
+        "usuario": "juanperez",
+        "password": "123456" 
+    },
+    {
+        "nombre":  "carla",
+        "apellido": "gutierrez",
+        "fecha": "15/04/1987",
+        "telefono": "1567777777",
+        "email": "cgutierrez@mail.com",
+        "usuario": "carlagutierrez",
+        "password": "111111"
+    },
+    {
+        "nombre":  "pedro",
+        "apellido": "fernandez",
+        "fecha": "07/09/1981",
+        "telefono": "1567778888",
+        "email": "pfernandez@mail.com",
+        "usuario": "pfernandez",
+        "password": "123456"
+    },
+    {
+        "nombre": "julieta" ,
+        "apellido": "lopez",
+        "fecha": "12/01/1994",
+        "telefono": "1555554444",
+        "email": "lopezjulieta@mail.com",
+        "usuario": "julilopez" ,
+        "password": "111111"
+    },
+    {
+        "nombre": "federico" ,
+        "apellido": "gomez",
+        "fecha": "07/08/1988",
+        "telefono": "146667777",
+        "email": "fedegomez@mail.com",
+        "usuario": "fedegomez",
+        "password": "123456"
+    }    
+
+] 
+}
